@@ -1,0 +1,40 @@
+% basic typography etc
+\KOMAoptions{
+    %fontsize=?pt,
+    DIV=calc, % the higher the less the spacing
+    %headings=standardclasses, % headings *with* serifs like in plain LaTeX
+}
+
+\RequirePackage[utf8]{inputenc} % utf8 encoding -> can type e.g. é in document
+\RequirePackage[T1]{fontenc} % font: Computer Modern
+%\RequirePackage[ngerman]{babel} % needed for languages other than english
+\RequirePackage{csquotes} % \enquote{} for correct quotation marks
+\RequirePackage{graphicx} % \includegraphics{}
+\RequirePackage{import} % alternative, needed to include
+\RequirePackage{pdfpages} % ... inkscape drawings
+%\graphicspath{figs}
+\RequirePackage{biblatex} % \cite{}, \printbibliography{} etc
+\addbibresource{refs.bib}
+\RequirePackage{hyperref} % link references
+\RequirePackage{hypcap} % jump *above* figures after clicking on the ref
+\RequirePackage{microtype} % font expansion, protrusion etc
+
+% anything to do w/ maths
+\RequirePackage{amsmath} % equation* environment etc
+\RequirePackage{amssymb} % \mathbb{R} etc
+\RequirePackage{amsthm}  % theorem env
+\newtheorem{theorem}{Theorem}
+\newtheorem{lemma}{Lemma}
+\RequirePackage{dsfont}  % \mathds{R} is better than \mathbb{R}
+\RequirePackage{physics} % \bra{}, \ket{}, \pdf{} etc
+\RequirePackage{mathrsfs} % \mathscr{L}, C, etc
+%\RequirePackage{siunitx} % \qty[⟨options⟩]{⟨number⟩}{⟨unit⟩}
+
+% abbreviations
+\RequirePackage{xspace} % to add a space after \eg even without {}
+\newcommand{\wrt}{w.\,r.\,t.\@\xspace}
+\newcommand{\ig}{i.\,g.\@\xspace}
+\newcommand{\ie}{i.\,e.\@\xspace}
+\newcommand{\eg}{e.\,g.\@\xspace}
+\newcommand{\cf}{cf.\@\xspace}
+\newcommand{\st}{s.\,t.\@\xspace}
